@@ -664,9 +664,6 @@ img{
 
 
 /* ************* getintouch ********************* */
-#getintouch{
-    margin-bottom: 100px;
-}
 #getintouch .getintouch-leftpart h1{
     font-size: 50px;
     margin-bottom: 20px;
@@ -852,6 +849,9 @@ img{
     }
     #app-screenshot{
         margin-top: 60px;
+    }
+    #app-screenshot h4{
+        margin: 0px auto 40px;
     }
      /* ****************** Affordable price ************* */
      #affordable-price .pricing-box{
