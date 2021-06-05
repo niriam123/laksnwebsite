@@ -1,0 +1,604 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <!----------- Font-awesome---------------------->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  
+     <!------- Owl Carousel----------------------->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" 
+     integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" 
+     integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500|Open+Sans">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    
+     <!---------- frequently question plus minus script ------------------>
+     <script>
+        $(document).ready(function(){
+            // Add minus icon for collapse element which is open by default
+            $(".collapse.show").each(function(){
+                $(this).siblings(".card-header").find(".btn i").html("remove");
+                $(this).prev(".card-header").addClass("highlight");
+            });
+            
+            // Toggle plus minus icon on show hide of collapse element
+            $(".collapse").on('show.bs.collapse', function(){
+                $(this).parent().find(".card-header .btn i").html("remove");
+            }).on('hide.bs.collapse', function(){
+                $(this).parent().find(".card-header .btn i").html("add");
+            });
+            
+            // Highlight open collapsed element 
+            $(".card-header .btn").click(function(){
+                $(".card-header").not($(this).parents()).removeClass("highlight");
+                $(this).parents(".card-header").toggleClass("highlight");
+            });
+        });
+        </script>
+
+
+    <!--------- fancybox css ------------------------->
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+     <!--------- Bootstrap ------------------------->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+     <!----------------Main style css-------------------->
+     <link rel="stylesheet" href="style.css" text="type/css">
+     
+</head>
+<body>
+    <!--------- Girl with Mobile------------------->
+    <section id="girlwithmobile">
+        <div class="wrapper">
+            <div class="row girlwithmobileinfo">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 girlwithmobile-leftcontent">
+                    <h2>No Complexity, <br>Easy Integrate </h2>
+                    <h6>Quality control of your data including read length distribution and uniformity <br> assessment in a few clicks and 
+                        choose your favorite technology. 
+                    </h6>
+                    <button>DOWNLOAD NOW</button>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 girlwithmobile-rightcontent">
+                    <img src="img/iphone_img.jpg" alt="iphone">
+                </div>
+            </div>
+        </div>
+         
+    </section>
+    <!-------------------- Dummy app ---------------->
+    <section id="dummyapp">
+        <div class="wrapper">
+            <h4>Dummy is a clean app landing page ideal for promoting your Android
+                apps, as well as web services and software. The features and sections let
+                you  present the App.</h4>
+            <div class="row dummyapp-box">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 dummybox-info">
+                    <div class="icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h5>Data in cloud</h5>
+                    <h6>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</h6>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 dummybox-info dummybox-info-1">
+                    <div class="icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h5>Data in cloud</h5>
+                    <h6>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</h6>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 dummybox-info dummybox-info-2">
+                    <div class="icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h5>Data in cloud</h5>
+                    <h6>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</h6>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 dummybox-info dummybox-info-3">
+                    <div class="icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h5>Data in cloud</h5>
+                    <h6>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-------------------- Build Tools ---------------------------->
+    <section id="buildtool">
+        <div class="wrapper">
+            <div class="row buildtool-info">
+                <div class="col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12 buildtool-leftcontent">
+                    <h3>Simplest way to <br> build tools.</h3>
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. 
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. 
+                    </h6>
+                    <button id="btn-download">Download Now</button>
+                </div>
+                <div class="col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12 buildtool-rightcontent">
+                    <img src="img/mockup3-phone.png" alt="mockup3-phone">
+                </div>
+            </div>
+        </div>
+    </section>
+
+     
+
+
+    <!------------------------ Amazing features ---------------- -->
+    <section id="amazing-feature">
+        <h4>Amazing <span>Features</span>
+        <div id="bottom-border"></div>
+        </h4>
+       
+        <div class="wrapper">
+            <div class="row amazing-feature-info">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 amazing-feature-box">
+                    <div class="color-icon">
+                        <i class="fas fa-circle-notch"></i>
+                    </div>
+                    <h5>Made With Love</h5>
+                    <h6>Lorem ipsum dolor sit amet, consetetur sadipscing elitr. Lorem ipsum dolor sit amet, consetetur
+                        sadipscing.
+                    </h6>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 amazing-feature-box">
+                    <div class="color-icon">
+                        <i class="fas fa-circle-notch"></i>
+                    </div>
+                    <h5>Made With Love</h5>
+                    <h6>Lorem ipsum dolor sit amet, consetetur sadipscing elitr. Lorem ipsum dolor sit amet, consetetur
+                        sadipscing.
+                    </h6>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 amazing-feature-box">
+                    <div class="color-icon">
+                        <i class="fas fa-circle-notch"></i>
+                    </div>
+                    <h5>Made With Love</h5>
+                    <h6>Lorem ipsum dolor sit amet, consetetur sadipscing elitr. Lorem ipsum dolor sit amet, consetetur
+                        sadipscing.
+                    </h6>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 amazing-feature-box">
+                    <div class="color-icon">
+                        <i class="fas fa-circle-notch"></i>
+                    </div>
+                    <h5>Made With Love</h5>
+                    <h6>Lorem ipsum dolor sit amet, consetetur sadipscing elitr. Lorem ipsum dolor sit amet, consetetur
+                        sadipscing.
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------------------- Manage Everything------------------------->
+    <section id="manage-everything">
+        <div class="wrapper">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 manage-everything-leftpart">
+                    <img src="img/data_7.png" alt="mobile-img">
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 manage-everything-rightpart owl-carousel owl-theme" id="manage-slider">
+                    <div class="everything-boxpart item">
+                        <div class="icon">
+                            <i class="fas fa-edit"></i>
+                        </div>
+                        <h2>Manage Everthing <br>In one Place</h2>
+                        <div id="bottom-border" class="blue-color"></div>
+                        <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum ante vel aliquet euismod.
+                         Curabitur accumsan vitae augue vitae eleifend. Nam nisl massa, malesuada id imperdiet ac.</h6>
+                    
+                    </div>
+                    <div class="everything-boxpart item">
+                        <div class="icon">
+                            <i class="fas fa-edit"></i>
+                        </div>
+                        <h2>Manage Everthing <br>In one Place</h2>
+                        <div id="bottom-border" class="blue-color"></div>
+                        <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum ante vel aliquet euismod.
+                         Curabitur accumsan vitae augue vitae eleifend. Nam nisl massa, malesuada id imperdiet ac.</h6>
+                    
+                    </div>
+                    <div class="everything-boxpart item">
+                        <div class="icon">
+                            <i class="fas fa-edit"></i>
+                        </div>
+                        <h2>Manage Everthing <br>In one Place</h2>
+                        <div id="bottom-border" class="blue-color"></div>
+                        <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum ante vel aliquet euismod.
+                         Curabitur accumsan vitae augue vitae eleifend. Nam nisl massa, malesuada id imperdiet ac.</h6>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------- App Screenshot -------------------------->
+    <section id="app-screenshot">
+        <h4>App <span>Screenshot</span>
+             <div id="bottom-border" class="app-border-color"></div>
+        </h4>
+        <div class="wrapper">
+           
+                <div class="row app-screenshot-info">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 mobile-screenshot">
+                        <img src="img/screenshot/interface_1.png" alt="">
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12  mobile-screenshot mobilescreenshot-1">
+                        <img src="img/screenshot/interface_1.png" alt="">
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 mobile-screenshot mobilescreenshot-2">
+                        <img src="img/screenshot/interface_1.png" alt="">
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------------ Video Watch--------------------->
+    <section id="video-watch">
+        <div class="wrapper">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 video-watch-leftpart">
+                    <img src="img/video.jpg" alt="video">
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 video-watch-rightpart">
+                   <h2>Watch Video for company overview</h2>
+                   <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum ante vel aliquet euismod.
+                    Curabitur accumsan vitae augue vitae eleifend. Nam nisl massa, malesuada id imperdiet ac.
+                    </h6>
+                    <h6>Cras interdum ante vel aliquet euismod. Curabitur accumsan vitae augue vitae eleifend. Nam nisl
+                        massa, malesuada id imperdiet ac.
+                    </h6>
+
+                        <div class="video-app card-deck">
+                            <div class="video-icon card">
+                                <i class="fab fa-youtube">
+                                    <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
+                                        <img class="card-img-top" />
+                                    </a>
+                                </i>
+                            </div>
+                            <p>Watch Video</p>
+                        </div>
+                   
+                   
+                </div>
+            </div>
+        </div>
+      
+    </section>
+
+    <!--------------------------affodable Price ----------------->
+
+    <section id="affordable-price">
+        <h4>Affordable <span>Pricing</span>  for All  </h4>
+
+        <div class="wrapper">
+            <div class="row affordable-price-info">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 pricing-box">
+                    <h4>Starter</h4>
+                    <div class="bottom-border"></div>
+                    <h3>$29</h3>
+                    <h5>Monthly</h5>
+                   <ul>
+                       <li>15 website</li>
+                       <li>50GB Disk Space</li>
+                       <li>50 Email Accounts</li>
+                   </ul>
+                   <button>Get Start</button>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 pricing-box pricing-box-1">
+                    <h4>Popular</h4>
+                    <div class="bottom-border"></div>
+                    <h3>$49</h3>
+                    <h5>Monthly</h5>
+                   <ul>
+                       <li>15 website</li>
+                       <li>50GB Disk Space</li>
+                       <li>50 Email Accounts</li>
+                       <li>50GB Monthly Bandwidth</li>
+                       <li>10 Subdomains</li>
+                   </ul>
+                   <button>Get Start</button>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 pricing-box pricing-box-2">
+                    <h4>Advance</h4>
+                    <div class="bottom-border"></div>
+                    <h3>$69</h3>
+                    <h5>Monthly</h5>
+                    <ul>
+                        <li>15 website</li>
+                        <li>50GB Disk Space</li>
+                        <li>50 Email Accounts</li>
+                        <li>50GB Monthly Bandwidth</li>
+                        <li>10 Subdomains</li>
+                        <li>15 Domains</li>
+                        <li>Unlimited Support</li>
+                    </ul>
+                    <button>Get Start</button>
+                </div>
+            </div>
+        </div>
+       
+    </section>
+
+    <!--------------------- client-page ------------------->
+    <section id="client-page">
+        <div class="wrapper">
+            <div class="row clientpage-info">
+                <div class="col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12 clientpage-leftpart">
+                    <h3>Check what our client say</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum ante vel aliquet euismod.
+                        </p>
+                </div>
+                <div class="col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12 clientpage-rightpart owl-carousel owl-theme" id="clientpage">
+                    <div class="item clientimage-content">
+                        <div class="client-image">
+                            <img src="img/testimonial/1.jpg" alt="client-image">
+                         </div>
+                            <h5>Mithila Nihad</h5>
+                            <h6>Founder</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum ante vel aliquet euismod.
+                             Curabitur accumsan vitae augue vitae eleifend. Nam nisl massa, malesuada id imperdiet ac.
+                            </p>     
+                    </div>
+                    <div class="item clientimage-content item active">
+                        <div class="client-image">
+                            <img src="img/testimonial/2.jpg" alt="client-image">
+                         </div>
+                            <h5>Mizanur Rahman</h5>
+                            <h6>Chairman</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum ante vel aliquet euismod.
+                             Curabitur accumsan vitae augue vitae eleifend. Nam nisl massa, malesuada id imperdiet ac.
+                            </p>     
+                    </div>
+                    <div class="item clientimage-content item">
+                        <div class="client-image">
+                            <img src="img/testimonial/3.jpg" alt="client-image">
+                         </div>
+                            <h5>Mithila Nihad</h5>
+                            <h6>Founder</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum ante vel aliquet euismod.
+                             Curabitur accumsan vitae augue vitae eleifend. Nam nisl massa, malesuada id imperdiet ac.
+                            </p>     
+                    </div>
+                    <div class="item clientimage-content item">
+                        <div class="client-image">
+                            <img src="img/testimonial/4.jpg" alt="client-image">
+                         </div>
+                            <h5>Mithila Nihad</h5>
+                            <h6>Founder</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum ante vel aliquet euismod.
+                             Curabitur accumsan vitae augue vitae eleifend. Nam nisl massa, malesuada id imperdiet ac.
+                            </p>     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------- Frequently asked question ------------------->
+    <section id="frequently-question">
+        <h4>Frequently Asked <span> Questions</span>
+            <div id="bottom-border"></div> </h4>
+        
+        <div class="wrapper">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="accordion" id="accordionExample">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="clearfix mb-0">
+                                        <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Clean code<i class="material-icons">add</i></a>									
+                                    </h2>
+                                </div>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Vestibulum id metus ac nisl bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet sagittis. In tincidunt orci sit amet elementum vestibulum.</div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0">
+                                        <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Great design out of box <i class="material-icons">add</i></a>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <div class="card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Fit on all devices <i class="material-icons">add</i></a>                     
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                    <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Vestibulum id metus ac nisl bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet sagittis. In tincidunt orci sit amet elementum vestibulum.</div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingFour">
+                                    <h2 class="mb-0">
+                                        <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Made with passion<i class="material-icons">add</i></a>                               
+                                    </h2>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                    <div class="card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+     
+    </section>
+
+   <!----------------------- Get in touch --------------------->
+   <section id="getintouch">
+        <div class="wrapper">
+            <div class="row getintouch-info">
+                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 getintouch-leftpart">
+                        <h1>Get in <br> touch</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum ante vel aliquet euismod.
+                        </p>
+                        <ul>
+                            <li><i class="fab fa-facebook fb-clr"></i></li>  
+                            <li><i class="fab fa-twitter twitter-clr"></i></li>
+                            <li><i class="fab fa-linkedin linkedin-clr"></i></li>
+                            <li><i class="fab fa-instagram insta-clr"></i></li>
+                            <li><i class="fab fa-youtube youtube-clr"></i></li>
+                        </ul>
+                </div>
+                <div class="col-xl-9 col-lg-8 col-md-8 col-sm-12 col-12 getintouch-rightpart">
+                    <form>
+                        <div class="form-row">
+                          <div class="col-md-6 mb-3">
+                            
+                            <input type="text" class="form-control" id="validationDefault01" placeholder="First" >
+                          </div>
+                         
+                          <div class="col-md-6 mb-3">
+                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                          </div>
+                         
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                              <input type="text" class="form-control" id="validationDefault03" placeholder="Subject" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="col-md-12 mb-3">
+                            <textarea class="form-control" rows="5" id="comment" placeholder="Your message"></textarea>
+                          </div>
+                         
+                        </div>
+                        <button class="btn btn-primary" id="btn-download" type="submit">Send Message</button>
+                      </form>
+                </div>
+            </div>
+        </div>
+   </section>
+   
+
+
+
+    <!---------------- jquery  js -------------------------->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" 
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+
+     <!---------------- bootstrap min js -------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+     <!---------------- bootstrap min  js -------------------------->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" 
+     integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+ 
+     <!---------------- owl carousel  js -------------------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" 
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+
+    <script src="js/jquery.fancybox.min.js"></script>
+
+<!---------------- fancy box js --------------> 
+<script type="text/javascript">
+    $('.card-deck a').fancybox({
+  caption : function( instance, item ) {
+    return $(this).parent().find('.card-text').html();
+  }
+});
+</script>
+
+ <!-- --------------- manage everything slider -->
+ <script type="text/javascript">
+    $('#manage-slider').owlCarousel({
+     autoplay: true,
+loop: true, /* use rewind if you don't want loop */
+margin: 10,
+responsiveClass: true,
+autoHeight: true,
+autoplayTimeout: 7000,
+smartSpeed: 800,
+nav: false,
+autoplay:true,
+dots:true,
+loop:true,
+responsive:{
+ 0: {
+ items: 1
+ },
+
+ 600: {
+ items: 1
+ },
+ 
+ 768: {
+ items: 1
+ },
+
+ 1300: {
+ items: 1
+ }
+
+}
+});
+</script>
+
+      <!--------------------- client-page slider------------------->
+        <script type="text/javascript">
+        $('#clientpage').owlCarousel({
+         autoplay: true,
+loop: true, /* use rewind if you don't want loop */
+margin: 10,
+/*
+animateOut: 'fadeOut',
+animateIn: 'fadeIn',
+*/
+responsiveClass: true,
+autoHeight: true,
+autoplayTimeout: 7000,
+smartSpeed: 800,
+nav: false,
+autoplay:true,
+dots:true,
+loop:true,
+responsive:{
+     0: {
+     items: 1
+     },
+
+     600: {
+     items: 1
+     },
+     
+     768: {
+     items: 1
+     },
+
+     1300: {
+     items: 1
+     }
+
+ }
+});
+    </script> 
+  
+</body>
+</html>

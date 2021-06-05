@@ -1,0 +1,934 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    color: #444;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background:#fff;
+    width:100%;
+    margin:0 auto;
+}
+html,
+body { height: 100%; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #1d293e;
+    font-weight: 600;
+}
+a {
+	font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+p {
+    margin-bottom: 0;
+}
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+fieldset {
+    border: 0 none;
+    margin: 0 auto;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+}
+.wrapper{
+    width:100%;
+    max-width:1140px;
+    margin: 0 auto;
+}
+.row{
+    margin-left:0;
+    margin-right:0;
+}
+/* ****************** girlwithmobile ************** */
+#girlwithmobile{
+    background:linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/bg/home-bg.jpg) no-repeat center top;
+    max-height: 100%;
+    height: 700px;
+    background-size: cover;
+    width: 100%;
+    max-width: 100%;
+    z-index: 0;
+}
+#girlwithmobile .girlwithmobileinfo{
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.girlwithmobile-leftcontent{
+    display: table-cell;
+    vertical-align: middle;
+}
+.girlwithmobile-leftcontent h2{
+    font-size:50px;
+    color:white;
+    margin-bottom: 15px;
+    text-align: left;
+}
+.girlwithmobile-leftcontent h6{
+    font-size: 14px;
+    color:#e6fffa;
+    text-align: left;
+    margin-bottom: 25px;
+}
+.girlwithmobile-leftcontent button{
+    background-color: #21c4fb;
+    color:white;
+    padding:15px 40px;
+    border-radius: 45px;
+    font-size: 16px;
+    border:none;
+}
+.girlwithmobile-rightcontent{
+   display: table-cell;
+   vertical-align: bottom;
+}
+.girlwithmobile-rightcontent img{
+    max-height: 100%;
+    height: 488px; 
+}
+
+/* ************* Dummy app *********** */
+#dummyapp{
+    margin-top: 90px;
+    background-color: white;
+}
+#dummyapp h4{
+    font-size: 31px;
+    color:#1b222a;
+    margin-bottom: 0;
+    text-align: center;
+}
+#dummyapp .dummyapp-box{
+    margin-top:60px;
+}
+#dummyapp .dummybox-info{
+    margin: 0px 15px;
+    width: calc(25% - 30px);
+    padding:40px;
+    background-color: #0da3fa;
+    border:none;
+    border-radius: 5px;
+    margin: 0 auto;
+    text-align: center;
+}
+#dummyapp .dummybox-info .icon{
+    width:60px;
+    height:60px;
+    border:none;
+    border-radius: 50%;
+    vertical-align: middle;
+    background-color: white;
+    margin: 0 auto 35px;
+}
+#dummyapp .dummybox-info .icon i{
+    margin-top: 18.5px;
+    font-size: 22px;
+}
+#dummyapp .dummybox-info h5{
+    font-size: 19px;
+    margin-bottom: 35px;
+    color:#fffef3;
+}
+#dummyapp .dummybox-info h6{
+    font-size: 15px;
+    color:#fffef3;
+    font-weight: 300;
+    line-height: 22px;
+}
+#dummyapp .dummybox-info-1{
+    background-color: #0f3460;
+}
+#dummyapp .dummybox-info-2{
+    background-color: #2ba46e;
+}
+#dummyapp .dummybox-info-3{
+    background-color: #f54391;
+}
+
+/* *********** buildtool ********************* */
+#buildtool{
+    margin-top: 240px;
+}
+.buildtool-info{
+    height:420px;
+}
+#buildtool .buildtool-leftcontent h3{
+    font-size: 44px;
+    margin-bottom: 25px;
+    color:#2b2e35;
+    font-weight: 900;
+}
+#buildtool .buildtool-leftcontent h6{
+    font-size: 17px;
+    margin-bottom: 35px;
+    color:#2b2e35;
+    line-height: 26px;
+    font-weight: 300;
+    color:#2b2e35;
+}
+#btn-download{
+    background-color: #21c4fb;
+    color:white;
+    padding: 12px 40px;
+    border-radius: 45px;
+    font-size: 22px;
+    border:none;
+}
+#buildtool .buildtool-rightcontent{
+    position: relative;
+    top: -100px;
+    padding-left: 40px;
+   
+}
+#buildtool .buildtool-rightcontent img{
+    height: 520px;
+    max-height: 520px;
+    width:100%;
+}
+
+
+/* ************ Amazing Features ******************** */
+#amazing-feature{
+    clear: both;
+    overflow: hidden;
+    background-color: #e7e8fa;
+}
+#amazing-feature h4{
+    font-size: 33px;
+    color:#202d40;
+    margin: 80px auto;
+    text-align: center;
+}
+#amazing-feature h4 span{
+    color: #0fa1f7;
+}
+#bottom-border{
+    height: 1px;
+    width: 100px;
+    border-bottom: 2px dashed;
+    margin: 10px auto 0;
+}
+#amazing-feature .amazing-feature-box{
+    padding: 0px 40px 50px;
+    background-color: white;
+    width: calc(25% - 30px);
+    margin: 0 15px;
+}
+#amazing-feature .amazing-feature-box .color-icon{
+    width: 60px;
+    height: 60px;
+    background-color: #0ea2fa;
+    position: relative;
+    top: -32px;
+}
+#amazing-feature .amazing-feature-box .color-icon i{
+    margin-top: 21px;
+    font-size: 23px;
+    margin-left: 19px;
+    color: white;
+}
+#amazing-feature .amazing-feature-box h5{
+    color: #1c273b;
+    font-size: 21px;
+    margin-bottom: 20px
+}
+#amazing-feature .amazing-feature-box h6{
+    color: #454c7a;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+}
+.amazing-feature-info{
+    margin-bottom: 80px;
+}
+
+/* ******************** Manage Everything **************** */
+#manage-everything{
+    margin-top: 80px;
+}
+#manage-everything .manage-everything-leftpart img{
+    height:100%;
+    max-height: 600px;
+    width: 100%;
+    max-width: 500px;
+}
+#manage-everything .manage-everything-rightpart{
+    margin-top: 75px;
+    padding: 0 60px;
+}
+#manage-everything .manage-everything-rightpart .icon{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    background-color: #0da3fa;
+    margin-bottom: 30px;
+}
+#manage-everything .manage-everything-rightpart .icon i{
+    font-size: 26px;
+    margin-top: 26px;
+    margin-left: 28px;
+    color: white;
+}
+#manage-everything .manage-everything-rightpart h2{
+    font-size: 41px;
+    color:#1d2a3a;
+    margin-bottom: 0;
+    font-weight: 900;
+}
+#manage-everything .manage-everything-rightpart .blue-color{
+    text-align: left;
+    color: #0da3fa;
+    height: 1px;
+    width: 100px;
+    border-bottom: 2px dashed;
+    margin:20px 0;
+}
+#manage-everything .manage-everything-rightpart h6{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color:#554b7d;
+}
+
+/* *********** manage everything slider *********** */
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background-color: #0da3fa;
+}
+.owl-theme .owl-dots .owl-dot span{
+    width: 12px;
+    height: 12px;
+    background: #4f9fce;
+}
+
+/* **************** App Screenshot **************** */
+#app-screenshot{
+    margin-top: 70px;
+}
+.app-screenshot-info{
+    margin:0 auto;
+    text-align: center;
+}
+#app-screenshot h4{
+    font-size: 33px;
+    color:#202d40;
+    margin: 0px auto 60px;
+    text-align: center;
+}
+.app-border-color{
+    color: #d3caca;
+}
+
+#app-screenshot h4 span{
+    color: #0fa1f7;
+}
+#app-screenshot .app-screenshot-info{
+    width: 100%;
+}
+#app-screenshot .app-screenshot-info .mobile-screenshot{
+    padding: 0;
+    text-align: center;
+    width: calc(33.33% - 30px); 
+    margin:0 15PX;
+    display: block;
+}
+#app-screenshot .app-screenshot-info .mobile-screenshot img{
+    height: 100%;
+    max-height:600px;
+    width:100%;
+    margin:0 auto;
+}
+/* #app-screenshot .owl-theme .owl-dots .owl-dot{
+    position: absolute;
+    top: 50%;
+    right: -25px;
+}
+#app-screenshot .app-screenshot-info button.owl-dot.active{
+    position: absolute;
+    top: 50%;
+    left: 0;
+} */
+
+/* ******************** Watch Video -------------------- */
+#video-watch{
+    margin-top: 165px;
+    margin-bottom: 60px;
+}
+#video-watch .video-watch-leftpart{
+    padding:0;
+}
+#video-watch .video-watch-leftpart img{
+    width:100%;
+    max-height: 460px;
+    height: 100%;
+    object-fit: cover;
+}
+#video-watch .video-watch-rightpart{
+    padding-left: 60px !important;
+    padding:0;
+}
+#video-watch .video-watch-rightpart h2{
+    margin-top: 22px;
+    font-size: 35px;
+    color: #1d2a3a;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+#video-watch .video-watch-rightpart h6{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #1d1a26;
+    margin-bottom: 25px;
+}
+
+#video-watch .video-watch-rightpart .video-app{
+    margin-top: 5px;
+}
+#video-watch .video-watch-rightpart .video-app .video-icon{
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    box-shadow: 0 0 -5px;
+    background-color: #0da3fa;
+    display: inline-block;
+    vertical-align: middle;
+}
+#video-watch .video-watch-rightpart .video-app .video-icon i{
+    font-size: 22px;
+    margin-top: 20px;
+    background: transparent;
+    color: white;
+    margin-left: 18px;
+}
+#video-watch .video-watch-rightpart .video-app p{
+    display: inline;
+    color:#0da3fa;
+    font-size: 20px;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+#video-watch .card-deck .card{
+    flex:none;
+
+}
+
+/* *************** Affordable price *************** */
+#affordable-price{
+    background: #1d293f;
+    clear: both;
+    overflow: hidden;
+    padding-bottom: 80px;
+}
+#affordable-price h4{
+    font-size: 33px;
+    color: white;
+    margin: 85px auto 75px;
+    text-align: center;
+}
+#affordable-price h4 span{
+    color: #0fa1f7;
+}
+#affordable-price .pricing-box{
+    background-color: white;
+    width: calc(33.33% - 30px);
+    margin: 0 15px;
+    text-align: center;
+    padding: 50px 0 50px 0;
+    border-radius: 5px;
+    max-height: 500px;
+
+}
+#affordable-price .pricing-box h4{
+    font-size: 32px;
+    color: black;
+    margin-bottom: 13px;
+    font-weight: 600;
+    margin-top: 0 !important;
+}
+#affordable-price .pricing-box .bottom-border{
+    border-bottom: 8px dotted #0fa1f7;
+    width: 80px;
+    text-align: center;
+    margin: 0px auto 42px;
+    display: block;
+}
+#affordable-price .pricing-box h3{
+    font-size: 64px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+#affordable-price .pricing-box h5{
+    font-size: 16px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#affordable-price .pricing-box ul{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+}
+#affordable-price .pricing-box ul li{
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+#affordable-price .pricing-box button{
+    background-color: #2cd4fb;
+    color: white;
+    padding: 15px 35px !important;
+    border-radius: 45px;
+    font-size: 14px !important;
+    border: none;
+    text-transform: uppercase;
+    margin-top: 15px;
+    font-weight: 600;
+}
+#affordable-price .pricing-box-1{
+    max-height: 580px;
+    height:100%;
+}
+#affordable-price .pricing-box-2{
+    max-height:640px;
+    height:100%;
+    background-color: #0fa1f7;
+    color:white;
+}
+#affordable-price .pricing-box-2 h4{
+    color: white;
+}
+#affordable-price .pricing-box-2 .bottom-border{
+    border-bottom: 8px dotted white;
+
+}
+#affordable-price .pricing-box-2 h3{
+    color: white;
+}
+#affordable-price .pricing-box-2 h5{
+    color: white;
+}
+
+/* ************** Client page *************** */
+#client-page {
+    background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("img/bg/testimonial-bg.jpg") bottom right;
+    height: 670px;
+    width: 100%;;
+}
+#client-page  .clientpage-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+
+#client-page .clientpage-leftpart h3{
+    font-size: 45px;
+    color: white;
+    margin-bottom: 20px;
+}
+#client-page .clientpage-leftpart p{
+    font-size: 18px;
+    color: rgb(241, 237, 237);
+}
+#client-page .clientimage-content{
+    background: white;
+    padding: 60px;
+}
+#client-page .client-image{
+    margin-bottom: 20px;
+}
+#client-page .client-image img{
+    width:90px;
+    height: 90px;
+    border-radius: 50%;
+}
+#client-page .clientimage-content h5{
+    color:#232a3d;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+#client-page .clientimage-content h6{
+    color:#182e3b;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+#client-page .clientimage-content p{
+    color: #1d1a26;
+    font-size: 18px;
+    margin-bottom: 10px;
+    word-break: break-all;
+}
+
+/* *********************** Frequently question **************** */
+#frequently-question {
+    margin-bottom: 100px;
+}
+#frequently-question h4{
+    font-size: 33px;
+    color: #202d40;
+    margin: 80px auto 40px;
+    text-align: center;
+}
+#frequently-question h4 span{
+    color:#0da3fa;
+}
+#frequently-question .accordion .card {
+	border-radius: 0;
+	border-width: 1px 0 1px 0;
+}
+#frequently-question .accordion .card:first-child {
+	border-top: none;
+}
+#frequently-question .accordion .card .card-header {
+	background: #fff;
+	border-radius: 0;
+	margin-bottom: 0px;
+	font-family: "Roboto", sans-serif;
+    padding: 0;
+}
+#frequently-question .accordion .card-header:hover {
+	background: #f8f8f8;
+}
+#frequently-question .accordion .card-header h2{
+    height:50px;
+    line-height: 50px;
+}
+#frequently-question .accordion .card-header h2 span {
+	float: left;
+	margin-top: 10px;
+}
+#frequently-question .accordion .card-header .btn {
+	font-size: 25px;
+    font-weight: 500;
+    width: 100%;
+    text-align: left;
+    position: relative;
+    top: 0;
+    padding: 0;
+    font-weight: normal;
+    font-weight: bold;
+}
+#frequently-question .accordion .card-header i {
+	float: left;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    top: 0px;
+    width: 50px;
+    height: 50px;
+    background:#0da3fa;
+    text-align: center;
+    padding-top: 10px;
+    margin-right: 26px;
+    color: white;
+}
+#frequently-question .accordion .card-header button:hover {
+	color: #23384e;
+}
+#frequently-question .accordion .card-body {
+	background: #f4f8fb;
+    color: #1d1a26;
+    padding: 30px 40px;
+    font-size: 18px;
+}
+#frequently-question .accordion .highlight {
+	color: #1d2a3a;
+	background: white !important;
+}
+
+
+/* ************* getintouch ********************* */
+#getintouch{
+    margin-bottom: 100px;
+}
+#getintouch .getintouch-leftpart h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+#getintouch .getintouch-leftpart p{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+#getintouch .getintouch-leftpart ul{
+    list-style-type: none;
+}
+#getintouch .getintouch-leftpart ul li{
+    display: inline;
+    margin-right:5px;
+}
+#getintouch .getintouch-leftpart ul li i{
+    width: 40px;
+    height: 40px;
+    background: red;
+    border-radius: 50%;
+    padding-top: 13px;
+    padding-left: 13px;
+    color: white;
+}
+#getintouch .getintouch-leftpart ul li i.fb-clr{
+    background-color: #1a55a1;
+}
+#getintouch .getintouch-leftpart ul li i.twitter-clr{
+    background-color: #09bce4;
+}
+#getintouch .getintouch-leftpart ul li i.linkedin-clr{
+    background-color: #1c58a1;
+}
+#getintouch .getintouch-leftpart ul li i.insta-clr{
+    background-color: #b7835e;
+}
+#getintouch .getintouch-leftpart ul li i.youtube-clr{
+    background-color: #e9181b;
+}
+
+#getintouch  .form-control{
+    border:0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+#getintouch  button{
+    background-color: #21c4fb;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 45px;
+    font-size: 16px;
+    border: none;
+    font-weight: bold;
+    margin: 0 auto 50px;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+}
+
+
+/* ************ responsive design ************* */
+
+@media only screen and (max-width:1200px){
+   /* **************** Build tool **************** */
+
+   #buildtool .buildtool-leftcontent h3{
+       font-size: 35px;
+       margin-bottom: 20px;
+   }
+   #buildtool .buildtool-leftcontent h6{
+    font-size: 14px;
+    margin-bottom: 25px;
+    line-height: 22px;
+   }
+   #btn-download{
+    padding: 10px 40px;
+    font-size: 20px;
+   }
+}
+@media only screen and (max-width:992px){
+    /* ******************* Dummy app *************** */
+    #dummyapp .dummybox-info{
+        margin: 0px 15px 15px;
+        width: calc(50% - 30px);
+    }
+    #dummyapp h4{
+        font-size: 21px;
+    }
+    /* ***************** Amazing Feature **********  */
+    #amazing-feature .amazing-feature-box{
+        width: calc(50% - 30px);
+        margin: 0 15px 60px;
+    }
+    .amazing-feature-info{
+        margin-bottom: 0;
+    }
+     /* ******************* Manage Everything*************** */
+     #manage-everything .manage-everything-rightpart h2{
+        font-size: 26px;
+     }
+     #manage-everything .manage-everything-rightpart h6{
+         font-size: 14px;
+     }
+     /* **************** App Screenshot **************** */
+     #app-screenshot .mobile-screenshot img{
+         max-height: 500px;
+     }
+    
+}
+
+
+@media only screen and (max-width:768px){
+    /* ****************** girlwithmobile ************** */
+    .girlwithmobile-rightcontent{
+        display: none;
+    }
+    #girlwithmobile{
+        height:450px;
+    }
+    .girlwithmobile-leftcontent h2{
+        font-size: 40px;
+    }
+    .girlwithmobile-leftcontent h6{
+        font-size: 13px;
+    }
+    .girlwithmobile-leftcontent button{
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+     /* **************** Dummy app ****************** */
+     #dummyapp{
+        margin-top: 50px;
+     }
+     #dummyapp h4{
+        font-size: 16px;
+        margin: 0 10px;
+    }
+     /* ******************** Build tool *********** */
+    #buildtool{
+        margin-top:50px;
+    }
+    #buildtool .buildtool-rightcontent{
+       top:0;
+    }
+    .buildtool-info{
+        height: 590px !important;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #buildtool .buildtool-rightcontent img{
+        height: 350px;
+        max-height: 100%;
+    }
+    /* ******************** Quality control *********** */
+    .qualitycontrol{
+        margin-top: 240px !important;
+    }
+   
+    /* **************** video watch ************* */
+    #video-watch{
+        margin-top: 70px;
+        margin-bottom: 10px;
+    }
+    /* ******************* Manage Everything*************** */
+    #manage-everything .manage-everything-leftpart img{
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+    }
+    #manage-everything .manage-everything-rightpart{
+        margin-top: 0;
+    }
+     /* **************** App Screenshot **************** */
+     #app-screenshot .app-screenshot-info .mobile-screenshot{
+         width:calc(100% - 30px);
+     }
+     #app-screenshot .mobile-screenshot img{
+       width: 300px !important;
+       max-height: 500px;
+    }
+    #app-screenshot .mobilescreenshot-1, #app-screenshot .mobilescreenshot-2{
+        display: none !important;
+    }
+    #app-screenshot{
+        margin-top: 60px;
+    }
+     /* ****************** Affordable price ************* */
+     #affordable-price .pricing-box{
+        width:calc(100% - 30px);
+        margin-bottom: 30px;
+    }
+    /* ***************** Get in touch ***************** */
+    #getintouch .getintouch-leftpart{
+        margin-bottom: 30px;
+    }
+    #getintouch .getintouch-leftpart h1{
+        font-size: 35px;
+    margin-bottom: 10px;
+    }
+    /* ************* frequently question ************ */
+    #frequently-question{
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width:560px){
+     /* ****************** girlwithmobile ************** */
+     #girlwithmobile{
+         height: 300px;
+     }
+     .girlwithmobile-leftcontent h2{
+        font-size: 24px;
+     }
+     .girlwithmobile-leftcontent h6{
+         display: none;
+     }
+     .girlwithmobile-leftcontent button{
+        padding: 10px 16px;
+        font-size: 13px;
+     }
+     /* ******************** Build tool *********** */
+    #buildtool .buildtool-leftcontent h3{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    #buildtool .buildtool-leftcontent h6{
+        margin-bottom: 10px;
+        line-height: 20px;
+        font-size: 13px;
+    }
+    #btn-download{
+        padding: 10px 30px;
+        font-size: 15px;
+    }
+     /* ******************* Dummy app *************** */
+     #dummyapp .dummybox-info{
+        width: calc(100% - 30px);
+     }
+     #dummyapp .dummybox-info .icon{
+        margin: 0 auto 15px;
+     }
+     #dummyapp .dummybox-info h5{
+        margin-bottom: 10px;
+     }
+     /* ************ Amazing Feature*************** */
+     #amazing-feature .amazing-feature-box{
+        width: calc(100% - 30px);
+        margin: 0 15px 60px;
+     }
+      /* ******************* Manage Everything*************** */
+    #manage-everything .manage-everything-leftpart img{
+       object-fit: contain;
+       max-height: 450px;
+    }
+    #manage-everything .manage-everything-rightpart h2{
+        font-size: 22px;
+    }
+    #manage-everything .manage-everything-rightpart h6{
+        font-size: 13px;
+    }
+    /* ***************** client page ***************** */
+    #client-page .clientimage-content{
+        padding:15px;
+    }
+}
